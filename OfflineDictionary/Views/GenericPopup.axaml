@@ -1,0 +1,86 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        MinWidth="400"
+        Width="400"
+        MaxWidth="400"
+        MinHeight="500"
+        Height="500"
+        MaxHeight="500"
+        x:Class="OfflineDictionary.Views.GenericPopup"
+        Icon="/Assets/ApplicationIcon.ico"
+        Title="Dialogue Host"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True">
+	<!-- /*
+	OfflineDictionary is an offline dictionary viewing application.
+	Copyright (C) 2025  JOJProgramming
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/-->
+	<Grid>
+	    <Panel>
+		    <ExperimentalAcrylicBorder IsHitTestVisible="False">
+			    <ExperimentalAcrylicBorder.Material>
+				    <ExperimentalAcrylicMaterial
+					    BackgroundSource="Digger"
+					    TintColor="{DynamicResource MediumBackgroundBrush}"
+					    TintOpacity="0.65"
+					    MaterialOpacity="0.65" />
+			    </ExperimentalAcrylicBorder.Material>
+		    </ExperimentalAcrylicBorder>
+	    </Panel>
+	    <StackPanel Orientation="Vertical" Spacing="30" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Center"
+	    >
+			<!-- Message -->
+			<DockPanel MaxHeight="400">
+				<StackPanel Orientation="Vertical" Spacing="5" DockPanel.Dock="Top">
+					<Image Margin="20" Source="/Assets/ApplicationIcon.ico" Width="64" Height="64" VerticalAlignment="Center" />
+					<TextBlock FontSize="20" FontWeight="600" TextWrapping="Wrap" HorizontalAlignment="Center" Name="TitleBox"
+					           MaxWidth="200" VerticalAlignment="Center"/>
+				</StackPanel>
+				<ScrollViewer>
+					<TextBlock FontSize="16" MaxWidth="400" TextWrapping="Wrap" HorizontalAlignment="Center" Name="ContentBox"/>
+				</ScrollViewer>
+				</DockPanel>
+			
+			<!-- Buttons -->
+			<StackPanel Orientation="Horizontal" Spacing="20" HorizontalAlignment="Center">
+				<Button Name="CancelButton" Click= "Cancel_OnClick" HotKey="Escape" ToolTip.Tip="Use Escape or click here to cancel."
+				        Background="{DynamicResource MediumBackgroundBrush}" Foreground="{DynamicResource BackgroundBrush}"
+				        CornerRadius="10" Width="125">
+					<StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+						<PathIcon Data="{StaticResource Dismiss}" Foreground="{DynamicResource WeakForegroundBrush}"/>
+						<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource StrongForegroundBrush}">
+							No
+						</TextBlock>
+					</StackPanel>
+					
+				</Button>
+				<Button Name="OkButton" Click="OK_OnClick"  HotKey="Ctrl+Enter" ToolTip.Tip="Use Control + Enter or click here to accept popup."
+				        Background="{DynamicResource ErrorBrush}" Foreground="{DynamicResource BackgroundBrush}"
+				        CornerRadius="10" Width="125">
+					<StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+						<PathIcon Data="{StaticResource Checkmark}" Foreground="{DynamicResource WeakForegroundBrush}"/>
+						<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource StrongForegroundBrush}">
+							OK
+						</TextBlock>
+					</StackPanel>
+				</Button>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Window>
