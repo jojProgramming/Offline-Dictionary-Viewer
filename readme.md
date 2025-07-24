@@ -2,6 +2,8 @@
  by JOJProgramming
 
 ### What is it?
+![dictionary](https://github.com/user-attachments/assets/7ba4d706-7606-4827-8e28-863d4bb26930)
+Offline Dictionary provides an interface to query the dictionary.
 The application allows the offline viewing of SQLite 3 databases in the 
 style laid out in ```OfflineDictionary/DB_ER_Diagram.png```  
 This may be useful in offline environments.  
@@ -20,6 +22,6 @@ suited to production use. However:
 but does not use some modern patterns such as dependency injection, as
 this was not relevant to the learning exercise. 
  + Additionally, the project has low test coverage, which would 
-need to be expanded to make the program suitable for meaningful real world use.
+need to be expanded to improve stability in production environments.
  + The project is licenced under GPL 3, so you can make the required improvements
 to make the application production ready.
