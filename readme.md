@@ -2,7 +2,7 @@
  by JOJProgramming
 
 ### What is it?
-![dictionary](https://github.com/user-attachments/assets/7ba4d706-7606-4827-8e28-863d4bb26930)
+![dictionary](https://github.com/user-attachments/assets/ea0bc67a-2a1f-406b-908c-58160ecf1aca)
 Offline Dictionary provides an interface to query the dictionary.
 The application allows the offline viewing of SQLite 3 databases in the 
 style laid out in ```OfflineDictionary/DB_ER_Diagram.png```  
