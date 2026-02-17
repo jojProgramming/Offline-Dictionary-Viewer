@@ -12,12 +12,10 @@ You can download a free dataset from [Wiktionary](https://dumps.wikimedia.org/en
 this specification.
 
 ### Why?
-The primary aim of this project was to experiment with Avalonia and SQLite and DotNet libraries
-that enable this.
+The primary aim of this project was to experiment with the UI design style, and to apply SQL queries in a real world context.
 
 ### Can I use this application?
-While the app is usable on supported platforms, it is not reasonably 
-suited to production use. However:
+The program was a hobby project, and is not suitable for production use. However:
  + The project has been made somewhat modular, and could reasonably be expanded for multiplatform support, 
 but does not use some modern patterns such as dependency injection, as
 this was not relevant to the learning exercise. 
