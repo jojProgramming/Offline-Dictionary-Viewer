@@ -15,11 +15,7 @@ this specification.
 The primary aim of this project was to experiment with the UI design style, and to apply SQL queries in a real world context.
 
 ### Can I use this application?
-The program was a hobby project, and is not suitable for production use. However:
- + The project has been made somewhat modular, and could reasonably be expanded for multiplatform support, 
-but does not use some modern patterns such as dependency injection, as
-this was not relevant to the learning exercise. 
- + Additionally, the project has low test coverage, which would 
-need to be expanded to improve stability in production environments.
- + The project is licenced under GPL 3, so you can make the required improvements
-to make the application production ready.
+The program was a hobby project, and does not receive support.
+ + The project is modular, although some best practices were ignored (such as dependency injection), as the were not relevant to the training exercise.
+ + The project has low test coverage, which could easily be expanded.
+ + The project is licenced under GPL 3, so you are able to make these fixes.
