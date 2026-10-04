@@ -12,7 +12,7 @@ You can download a free dataset from [Wiktionary](https://dumps.wikimedia.org/en
 this specification.
 
 ### Why?
-The primary aim of this project was to experiment with the UI design style, and to apply SQL queries in a real world context.
+The primary aim of this project was to experiment with some of Microsoft's Fluent Design ideas, as well as to test SQLite 3 within a project.
 
 ### Can I use this application?
 The program was a hobby project, and does not receive support.
